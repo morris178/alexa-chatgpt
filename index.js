@@ -35,7 +35,7 @@ const LaunchRequestHandler = {
   },
   async handle(handlerInput) {
     const response =
-      'Seja bem vindo ao GPT-3. Você pode perguntar algo como "chat qual a capital da França?"';
+      'Willkommen bei GPT-3. Sie können etwas fragen wie "Chat, was ist die Hauptstadt von Frankreich?"';
 
     return handlerInput.responseBuilder.speak(response).getResponse();
   },
@@ -71,7 +71,7 @@ const HelpIntentHandler = {
   },
   handle(handlerInput) {
     const speakOutput =
-      "Você pode perguntar algo como 'chat ideia de nome para bebes'";
+      'Sie können etwas fragen wie "Chat, Ideen für Babynamen".';
 
     return handlerInput.responseBuilder.speak(speakOutput).getResponse();
   },
@@ -104,7 +104,7 @@ const FallbackIntentHandler = {
   },
   handle(handlerInput) {
     const speakOutput =
-      "Desculpe, não tenho conhecimento sobre isso. Por favor, tente novamente.";
+      "Das weiß ich leider nicht. Bitte versuchen Sie es erneut mit einer angepassten Anfrage.";
 
     return handlerInput.responseBuilder.speak(speakOutput).getResponse();
   },
@@ -129,7 +129,7 @@ const IntentReflectorHandler = {
     );
   },
   handle(handlerInput) {
-    const speakOutput = `Que tal me perguntar algo como 'quanto está o dólar hoje?'`;
+    const speakOutput = `Wie wäre es, wenn Sie mich etwas wie "Wie viel kostet der Dollar heute?`;
 
     return handlerInput.responseBuilder.speak(speakOutput).getResponse();
   },
@@ -141,7 +141,7 @@ const ErrorHandler = {
   },
   handle(handlerInput) {
     const speakOutput =
-      "Desculpe, parece que tivemos um problema aqui! Acesse github.com/joao208/alexa-chatgpt para mais informações.";
+      "Entschuldigung, hier scheint ein Problem aufgetreten zu sein! Besuchen Sie Github für weitere Informationen.";
 
     return handlerInput.responseBuilder.speak(speakOutput).getResponse();
   },
